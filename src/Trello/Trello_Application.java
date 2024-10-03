@@ -92,6 +92,8 @@ public class Trello_Application {
 		WebElement Logout_Button = driver.findElement(By.xpath("//button[@data-testid=\"account-menu-logout\"]"));
 		Logout_Button.click();
 		wait.until(ExpectedConditions.titleIs("https://id.atlassian.com/logout?continue=https%3A%2F%2Ftrello.com%2Flogout%3Fdsc%3D526df664b7e55f28e367f3205116b09dbad2b0cc5da0de4d10292155dc63a464"));
+		
+		Thread.sleep(4000);
 	
 		
 		driver.manage().window().minimize();	
